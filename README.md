@@ -18,7 +18,7 @@ Snippets list:
 
 1. Download and install Intel Edison SDK ( https://communities.intel.com/docs/DOC-23242 ).
 2. Checkout this repostiory.
-3. Update SDK path in build.py file.
+3. Create *config.py* file and add *EDISON_SDK_ROOT* variable there. EDISON_SDK_ROOT should point to Intel Edison SDK path.
 4. Call *python build.py* from command line.
 5. Copy main executable to Intel Edison and run it.
 6. Check if Intel Edison device is visible during scanning on other bluetooth device.
