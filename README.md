@@ -14,8 +14,9 @@ A set of snippets how to develop Edison Bluetooth Low Energy applications using 
 1. Download and install Intel Edison SDK.
 2. Checkout this repostiory.
 3. Update SDK path in build.py file.
-4. Call python build.py from command line.
-5. Copy main executable to Intel Edison, run it check if Edison device is visible 
+4. Call *python build.py* from command line.
+5. Copy main executable to Intel Edison and run it.
+6. Check if Intel Edison device is visible during scanning on other bluetooth device.
 
 
 <div align="center"><img src="http://i.imgur.com/zAGqc03.png"></div>
