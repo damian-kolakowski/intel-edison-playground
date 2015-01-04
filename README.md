@@ -18,5 +18,5 @@ A set of snippets how to develop Edison Bluetooth Low Energy applications using 
 5. Copy main executable to Intel Edison, run it check if Edison device is visible 
 
 
-<img src="http://i.imgur.com/zAGqc03.png" align="center">
+<div align="center"><img src="http://i.imgur.com/zAGqc03.png"></div>
 
