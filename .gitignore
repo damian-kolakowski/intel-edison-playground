@@ -1,3 +1,5 @@
 .*
 !/.gitignore
 main
+config.py
+config.pyc

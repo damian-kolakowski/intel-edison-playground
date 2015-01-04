@@ -1,10 +1,9 @@
 import glob
 import os
+import config
 
-# TODO - Export path to local.properties file.
-sdk 	 = '/Users/damiankolakowski/Desktop/edison/poky-edison-eglibc-i386-edison-image-core2-32-toolchain-1.6/'
-gcc 	 = sdk + 'sysroots/i386-pokysdk-darwin/usr/bin/i586-poky-linux/i586-poky-linux-gcc'
-sys_root = sdk + 'sysroots/core2-32-poky-linux'
+gcc 	 = config.EDISON_SDK_ROOT + 'sysroots/i386-pokysdk-darwin/usr/bin/i586-poky-linux/i586-poky-linux-gcc'
+sys_root = config.EDISON_SDK_ROOT + 'sysroots/core2-32-poky-linux'
 c_files	 = glob.glob("*.c")
 
 print 'Compiling [' + ', '.join(c_files) + '] ...'
