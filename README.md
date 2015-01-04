@@ -9,6 +9,11 @@
 
 A set of snippets how to develop Edison Bluetooth Low Energy applications using C programming language ( with BlueZ stack ).
 
+Snippets list:
+
+1. [DONE] How to advertise itself with custom name ?
+2. [NOT DONE] How to scan near devices ?
+
 ### How to build & run ?
 
 1. Download and install Intel Edison SDK ( https://communities.intel.com/docs/DOC-23242 ).
