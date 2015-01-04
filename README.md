@@ -3,7 +3,7 @@
 >The Intel® Edison development platform is the first in a series of low-cost, product-ready, general purpose compute platforms that help lower the barriers to entry for entrepreneurs of all sizes—from pro makers to consumer electronics and companies working in the Internet of Things (IoT). The Intel Edison development platform packs a robust set of features into its small size, delivering great performance, durability, and a broad spectrum of I/O and software support. Those versatile features help meet the needs of a wide range of customers.
 
 (Image below is linked from **Spark Fun's Shop**: https://www.sparkfun.com/products/13024 )
-<div style="text-align:center;"><img src="https://cdn.sparkfun.com//assets/parts/1/0/0/1/0/13024-01.jpg" alt="alt text" style="width:200px;"/></div>
+<div style="text-align:center;"><img src="https://cdn.sparkfun.com//assets/parts/1/0/0/1/0/13024-01.jpg" alt="alt text" width="200px"/></div>
 
 ### What is this repo ?
 
