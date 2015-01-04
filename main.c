@@ -53,7 +53,7 @@ int main()
 
 	const int device = hci_open_dev(hci_get_route(NULL));
 	if ( device < 0 ) { 
-		printf("Failed to lopen HC device (error: %d)\n", device); 
+		printf("Failed to lopen HC device (error: %d)\n", errno); 
 		return 0; 
 	}
 
@@ -72,11 +72,11 @@ int main()
 	ret = hci_send_req(device, &adv_params_rq, 1000);
 	if ( ret < 0 ) {
 		hci_close_dev(device);
-		printf("Failed to set advertisement parameters data (error: %d).\n", ret);
+		printf("Failed to set advertisement parameters data (error: %d).\n", errno);
 		return 0;
 	}
 
-	// Set BLE advertisment data.
+	// Set BLE advertisement data.
 	
 	le_set_advertising_data_cp adv_data_cp = ble_hci_params_for_set_adv_data("Intel Edison");
 	
@@ -87,7 +87,7 @@ int main()
 	ret = hci_send_req(device, &adv_data_rq, 1000);
 	if ( ret < 0 ) {
 		hci_close_dev(device);
-		printf("Failed to set advertising data (error: %d).\n", ret);
+		printf("Failed to set advertising data (error: %d).\n", errno);
 		return 0;
 	}
 
@@ -104,7 +104,7 @@ int main()
 	ret = hci_send_req(device, &enable_adv_rq, 1000);
 	if ( ret < 0 ) {
 		hci_close_dev(device);
-		printf("Failed to enable advertising (error: %d).\n", ret);
+		printf("Failed to enable advertising (error: %d).\n", errno);
 		return 0;
 	}
 
