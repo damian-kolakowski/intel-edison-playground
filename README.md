@@ -11,7 +11,7 @@ A set of snippets how to develop Edison Bluetooth Low Energy applications using 
 
 Snippets list:
 
-1. [DONE] How to advertise itself with custom name ?
+1. [DONE] How to advertise itself with custom name ? ( see main.c file )
 2. [NOT DONE] How to scan near devices ?
 
 ### How to build & run ?
