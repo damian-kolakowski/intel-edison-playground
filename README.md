@@ -11,7 +11,7 @@ A set of snippets how to develop Edison Bluetooth Low Energy applications using 
 
 ### How to build & run ?
 
-1. Download and install Intel Edison SDK.
+1. Download and install Intel Edison SDK ( https://communities.intel.com/docs/DOC-23242 ).
 2. Checkout this repostiory.
 3. Update SDK path in build.py file.
 4. Call *python build.py* from command line.
