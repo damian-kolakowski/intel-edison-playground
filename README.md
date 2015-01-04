@@ -17,8 +17,8 @@ A set of snippets how to develop Edison Bluetooth Low Energy applications using 
 4. Call python build.py from command line.
 5. Copy main executable to Intel Edison, run it check if Edison device is visible 
 
-<div style="text-align:center;">
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAAHgCAYAAABU/4NXAAAAAXNSR0IArs4c6QAAAAlwSFlzAAAL
+
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAAHgCAYAAABU/4NXAAAAAXNSR0IArs4c6QAAAAlwSFlzAAAL
 EwAACxMBAJqcGAAAAVlpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADx4OnhtcG1ldGEgeG1sbnM6
 eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IlhNUCBDb3JlIDUuNC4wIj4KICAgPHJkZjpSREYg
 eG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4K
@@ -687,5 +687,5 @@ oD57bnWhPs5BHqF5tl0eowcBxjiiZy5zRwLDRbKEAOMPJksKNi+v8ryM35KD1W+PNh9HqyuYZ+vZ
 9niMfARIHJE/h/mOIGiwMGSbgvnICy1Duc0L1g3Nt+Rg64SWQ7ctwzlT9CBA4oieuTziSI5kwHmV
 5ZWHBoL5wXPbeF55tozH6EHgcB82esbFkRABIlCICJA4ChFcqiYC0YoAiSNaZ5bjIgKFiACJoxDB
 pWoiEK0IkDiidWY5LiJQiAiQOAoRXKomAtGKAIkjWmeW4yIChYgAiaMQwaVqIhCtCPx/qb+/WnrY
-bbgAAAAASUVORK5CYII="/></div>
+bbgAAAAASUVORK5CYII=)
 
