@@ -27,7 +27,6 @@ le_set_advertising_data_cp ble_hci_params_for_set_adv_data(char * name)
 
 	le_set_advertising_data_cp adv_data_cp;
 	memset(&adv_data_cp, 0, sizeof(adv_data_cp));
-	memset(&adv_data_cp.data, 0, sizeof(adv_data_cp.data));
 
 	// Build simple advertisement data bundle according to:
 	// - ​"Core Specification Supplement (CSS) v5" 
@@ -72,6 +71,7 @@ int main()
 	
 	ret = hci_send_req(device, &adv_params_rq, 1000);
 	if ( ret < 0 ) {
+		hci_close_dev(device);
 		printf("Failed to set advertisement parameters data (error: %d).\n", ret);
 		return 0;
 	}
@@ -86,6 +86,7 @@ int main()
 
 	ret = hci_send_req(device, &adv_data_rq, 1000);
 	if ( ret < 0 ) {
+		hci_close_dev(device);
 		printf("Failed to set advertising data (error: %d).\n", ret);
 		return 0;
 	}
@@ -102,6 +103,7 @@ int main()
 
 	ret = hci_send_req(device, &enable_adv_rq, 1000);
 	if ( ret < 0 ) {
+		hci_close_dev(device);
 		printf("Failed to enable advertising (error: %d).\n", ret);
 		return 0;
 	}
