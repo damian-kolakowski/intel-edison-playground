@@ -58,7 +58,7 @@ int main()
 
 	const int device = hci_open_dev(hci_get_route(NULL));
 	if ( device < 0 ) { 
-		perror("Failed to lopen HC device.");
+		perror("Failed to open HC device.");
 		return 0; 
 	}
 
