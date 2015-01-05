@@ -12,7 +12,7 @@ A set of snippets how to develop Edison Bluetooth Low Energy applications using 
 Snippets list:
 
 1. [DONE] How to advertise itself with custom name ? ( see main.c file )
-2. [NOT DONE] How to scan near devices ?
+2. [DONE] How to scan near devices ( with RSSI value ) ?
 
 ### How to build & run ?
 
