@@ -1,3 +1,8 @@
+#
+#  Intel Edison Playground
+#  Copyright (c) 2015 Damian Kołakowski. All rights reserved.
+#
+
 import glob
 import os
 import config
@@ -12,10 +17,3 @@ if 0 != os.system(gcc + ' -m32 -march=i586 --sysroot=' + sys_root + ' -o main ' 
 	exit()
 
 print 'Success.'
-
-
-
-
-
-
-

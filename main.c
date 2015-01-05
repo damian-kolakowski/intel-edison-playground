@@ -1,3 +1,8 @@
+//
+//  Intel Edison Playground
+//  Copyright (c) 2015 Damian Kołakowski. All rights reserved.
+//
+
 #include <stdlib.h>
 #include <errno.h>
 #include <curses.h>
@@ -53,7 +58,7 @@ int main()
 
 	const int device = hci_open_dev(hci_get_route(NULL));
 	if ( device < 0 ) { 
-		printf("Failed to lopen HC device (error: %d)\n", errno); 
+		perror("Failed to lopen HC device.");
 		return 0; 
 	}
 
@@ -72,7 +77,7 @@ int main()
 	ret = hci_send_req(device, &adv_params_rq, 1000);
 	if ( ret < 0 ) {
 		hci_close_dev(device);
-		printf("Failed to set advertisement parameters data (error: %d).\n", errno);
+		perror("Failed to set advertisement parameters data.");
 		return 0;
 	}
 
@@ -87,7 +92,7 @@ int main()
 	ret = hci_send_req(device, &adv_data_rq, 1000);
 	if ( ret < 0 ) {
 		hci_close_dev(device);
-		printf("Failed to set advertising data (error: %d).\n", errno);
+		perror("Failed to set advertising data.");
 		return 0;
 	}
 
@@ -104,7 +109,7 @@ int main()
 	ret = hci_send_req(device, &enable_adv_rq, 1000);
 	if ( ret < 0 ) {
 		hci_close_dev(device);
-		printf("Failed to enable advertising (error: %d).\n", errno);
+		perror("Failed to enable advertising.");
 		return 0;
 	}
 
