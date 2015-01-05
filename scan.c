@@ -114,7 +114,7 @@ int main()
 			if ( meta_event->subevent == EVT_LE_ADVERTISING_REPORT ) {
 				uint8_t reports_count = meta_event->data[0];
 				for ( i = 0 ; i < meta_event->data[0] ; ++i ) {
-					info = (le_advertising_info *) (meta_event->data + 1 + i * sizeof(le_advertising_info));
+					info = (le_advertising_info *) (meta_event->data + 1);
 					char addr[18];
 					ba2str(&(info->bdaddr), addr);
 					printf("%s - RSSI %d\n", addr, (char)buf[len-1]);
