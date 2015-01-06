@@ -113,11 +113,13 @@ int main()
 			meta_event = (evt_le_meta_event*)(buf+HCI_EVENT_HDR_SIZE+1);
 			if ( meta_event->subevent == EVT_LE_ADVERTISING_REPORT ) {
 				uint8_t reports_count = meta_event->data[0];
-				for ( i = 0 ; i < meta_event->data[0] ; ++i ) {
-					info = (le_advertising_info *) (meta_event->data + 1);
+				void * offset = meta_event->data + 1;
+				while ( reports_count-- ) {
+					info = (le_advertising_info *)offset;
 					char addr[18];
 					ba2str(&(info->bdaddr), addr);
-					printf("%s - RSSI %d\n", addr, (char)buf[len-1]);
+					printf("%s - RSSI %d\n", addr, (char)info->data[info->length]);
+					offset = info->data + info->length + 2;
 				}
 			}
 		}
